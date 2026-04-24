@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.E. Padre Matias - Hardware</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i data-lucide="cpu"></i>
+            <span>E.E. Padre Matias</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Início</a></li>
+            <li><a href="#componentes" class="nav-link">Componentes</a></li>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+            <i data-lucide="menu"></i>
+        </button>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Trabalho Escolar 2026</span>
+            <h1>Hardware de Computadores</h1>
+            <p>Componentes essenciais que fazem seu computador funcionar</p>
+            <a href="#componentes" class="btn">Ver Componentes</a>
+        </div>
+    </section>
+
+    <section id="componentes" class="components-section">
+        <div class="section-header">
+            <h2>Componentes de PC</h2>
+            <p>Navegue pelas abas para explorar cada peça</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="cpu" data-anim="slide-left">
+                    <i data-lucide="cpu"></i>
+                    <span>CPU</span>
+                </button>
+                <button class="tab-btn" data-tab="gpu" data-anim="slide-right">
+                    <i data-lucide="monitor"></i>
+                    <span>GPU</span>
+                </button>
+                <button class="tab-btn" data-tab="ram" data-anim="scale">
+                    <i data-lucide="server"></i>
+                    <span>RAM</span>
+                </button>
+                <button class="tab-btn" data-tab="ssd" data-anim="flip">
+                    <i data-lucide="hard-drive"></i>
+                    <span>SSD</span>
+                </button>
+                <button class="tab-btn" data-tab="motherboard" data-anim="fade-up">
+                    <i data-lucide="circuit-board"></i>
+                    <span>Placa-Mãe</span>
+                </button>
+                <button class="tab-btn" data-tab="psu" data-anim="rotate">
+                    <i data-lucide="power"></i>
+                    <span>Fonte</span>
+                </button>
+                <button class="tab-btn" data-tab="cooler" data-anim="bounce">
+                    <i data-lucide="fan"></i>
+                    <span>Cooler</span>
+                </button>
+                <button class="tab-btn" data-tab="case" data-anim="zoom">
+                    <i data-lucide="box"></i>
+                    <span>Gabinete</span>
+                </button>
+                <div class="tab-indicator"></div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <div class="tab-panel active" id="tab-cpu">
+                    <div class="panel-image">
+                        <img src="https://t.ctcdn.com.br/Dge7oh_2vPpLN0bBRf4Z2gFon0U=/1200x675/smart/i580938.jpeg" alt="CPU">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Processador (CPU)</h3>
+                        <p class="main-desc">O cérebro do computador. Executa instruções e cálculos matemáticos que fazem tudo funcionar.</p>
+                        <div class="details">
+                            <p><strong>Como funciona:</strong> A CPU busca instruções na memória, decodifica e executa operações aritméticas e lógicas. Quanto mais cores, mais tarefas simultâneas.</p>
+                            <p><strong>Importância:</strong> Determina a velocidade de processamento de todos os programas. Essencial para produtividade e jogos.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Clock: 3.5 - 5.8 GHz</span>
+                            <span class="spec">Cores: 4 - 64</span>
+                            <span class="spec">Threads: 8 - 128</span>
+                            <span class="spec rgb">RGB: Sim</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-gpu">
+                    <div class="panel-image">
+                        <img src="https://t.ctcdn.com.br/dm82tVuBlWb7o9qIZSfWjg3B5dQ=/8x776:3772x2828/640x360/smart/i860837.png" alt="GPU">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Placa de Vídeo (GPU)</h3>
+                        <p class="main-desc">Processamento gráfico paralelo massivo. Renderiza imagens, vídeos e efeitos visuais em tempo real.</p>
+                        <div class="details">
+                            <p><strong>Arquitetura:</strong> Milhares de CUDA cores trabalham em paralelo para processar pixels e polígonos. Ray tracing simula luz realista.</p>
+                            <p><strong>Aplicações:</strong> Jogos em alta resolução, edição de vídeo 4K/8K, renderização 3D, inteligência artificial e mineração.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">VRAM: 4 - 24 GB</span>
+                            <span class="spec">Clock: 1.5 - 2.6 GHz</span>
+                            <span class="spec">CUDA Cores: 1000+</span>
+                            <span class="spec rgb">RGB: Aura Sync</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-ram">
+                    <div class="panel-image">
+                        <img src="https://www.sos.com.br/Lib/Redimensiona.ashx?img=noticia/20191002091002584.jpg&w=768&h=600" alt="RAM">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Memória RAM</h3>
+                        <p class="main-desc">Memória volátil de alta velocidade. Armazena dados temporários dos programas em execução.</p>
+                        <div class="details">
+                            <p><strong>Funcionamento:</strong> Acesso aleatório permite leitura/escrita em qualquer posição instantaneamente. DDR significa Double Data Rate - transmite 2x por ciclo.</p>
+                            <p><strong>Dual Channel:</strong> Usar 2 ou 4 pentes melhora significativamente a largura de banda, essencial para gráficos integrados.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Capacidade: 8 - 128 GB</span>
+                            <span class="spec">Tipo: DDR4 / DDR5</span>
+                            <span class="spec">Frequência: 2400 - 8000 MHz</span>
+                            <span class="spec rgb">RGB: Dominator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-ssd">
+                    <div class="panel-image">
+                        <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/esupport/esupport-pages/internal-ssd-sata-m2-nvme-comparison.png" alt="SSD">
+                    </div>
+                    <div class="panel-info">
+                        <h3>SSD (Armazenamento)</h3>
+                        <p class="main-desc">Armazenamento sem partes móveis. Usa chips de memória flash NAND para guardar dados permanentemente.</p>
+                        <div class="details">
+                            <p><strong>Vantagens:</strong> Boot em segundos, programas abrem instantaneamente, sem ruído, consumo baixo e resistência a quedas.</p>
+                            <p><strong>Tecnologias:</strong> NVMe usa PCIe para velocidades de até 7GB/s. SATA limitado a 600MB/s. TLC, MLC, SLC diferem em velocidade e durabilidade.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Capacidade: 250GB - 8TB</span>
+                            <span class="spec">Leitura: Até 7000 MB/s</span>
+                            <span class="spec">Tipos: SATA, M.2, NVMe</span>
+                            <span class="spec rgb">RGB: Heat Spreader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-motherboard">
+                    <div class="panel-image">
+                        <img src="https://www.oficinadanet.com.br/imagens/post/28892/placa-mae-intel.jpg" alt="Placa-Mãe">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Placa-Mãe</h3>
+                        <p class="main-desc">Circuito principal que interliga todos os componentes via barramentos de dados, controle e energia.</p>
+                        <div class="details">
+                            <p><strong>Componentes:</strong> Chipset gerencia comunicação, VRMs fornecem energia limpa ao CPU, slots PCIe expandem capacidades, BIOS/UEFI inicializa o sistema.</p>
+                            <p><strong>Overclocking:</strong> Placas premium oferecem ajustes finos de voltagem, temporização e dissipação térmica para extrair máximo desempenho.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Soquete: AM4, LGA1700</span>
+                            <span class="spec">Chipset: B650, Z790</span>
+                            <span class="spec">Formato: ATX, mATX</span>
+                            <span class="spec rgb">RGB: Aura Sync</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-psu">
+                    <div class="panel-image">
+                        <img src="https://s2-techtudo.glbimg.com/3Q6PFidWGiHiEpEs-Pr0eDys8Gc=/0x0:1900x1268/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/n/u/p49QB0T7Swj2BiJhPo2Q/dewatermark.ai-1747770248451-1-.png" alt="Fonte">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Fonte de Alimentação (PSU)</h3>
+                        <p class="main-desc">Converte corrente alternada da tomada em corrente contínua estável para todos os componentes.</p>
+                        <div class="details">
+                            <p><strong>Eficiência:</strong> Certificações 80 Plus (Bronze a Titanium) indicam eficiência energética. Menor desperdício = menos calor e economia.</p>
+                            <p><strong>Proteções:</strong> OVP, OCP, SCP, OPP protegem contra surtos, curtos e sobrecarga. Caps japonesas garantem longevidade.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Potência: 450 - 1600W</span>
+                            <span class="spec">Certificação: 80 Plus Gold</span>
+                            <span class="spec">Modular: Full/Semi</span>
+                            <span class="spec rgb">RGB: Fan LED</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-cooler">
+                    <div class="panel-image">
+                        <img src="https://s2-techtudo.glbimg.com/45m4ZlVKOK4spELJMlyKjaqiLes=/0x0:1280x720/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/V/7/DxQyi5TXqXhAsSgaOFNw/cooler-gamer.png" alt="Cooler">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Refrigeração (Cooler)</h3>
+                        <p class="main-desc">Dissipa o calor gerado pelo CPU e GPU para manter temperaturas seguras e performance máxima.</p>
+                        <div class="details">
+                            <p><strong>Tipos:</strong> Air Cooler usa heatpipes e fans. AIO (All-in-One) tem radiador externo. Custom Loop é a solução premium com líquido e reservatório.</p>
+                            <p><strong>Thermal Paste:</strong> Composto térmico preenche micro-imperfeições entre CPU e cooler. Aplicação correta reduz temperaturas em 5-10°C.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Tipo: Air / AIO / Custom</span>
+                            <span class="spec">TDP: 100 - 300W</span>
+                            <span class="spec">Fans: 120/140mm</span>
+                            <span class="spec rgb">RGB: ARGB 5V</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-case">
+                    <div class="panel-image">
+                        <img src="https://t.ctcdn.com.br/dnKdBtrNX_CMN1jmnpC9Mp8aTJg=/1200x675/smart/i1057421.png" alt="Gabinete">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Gabinete (Case)</h3>
+                        <p class="main-desc">Chassis que organiza, protege e refrigera todos os componentes. Define o estético e airflow do sistema.</p>
+                        <div class="details">
+                            <p><strong>Airflow:</strong> Entrada de ar frontal inferior, exaustão superior/traseira. Malhas e filtros de poeira balanceiam refrigeração e limpeza.</p>
+                            <p><strong>Cable Management:</strong> Canaletas e espaço atrás da motherboard escondem cabos. Bons gabinetes têm grommets de borracha e velcros.</p>
+                        </div>
+                        <div class="specs">
+                            <span class="spec">Formato: Mid / Full Tower</span>
+                            <span class="spec">Painel: Vidro Temperado</span>
+                            <span class="spec">Fans: 6+ suportadas</span>
+                            <span class="spec rgb">RGB: Tira LED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Sobre</h2>
+            <p>Trabalho desenvolvido para apresentar os principais componentes de hardware de computadores.</p>
+            <div class="about-meta">
+                <span>Escola Estadual Padre Matias</span>
+                <span>2026</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <span>E.E. Padre Matias - 2026</span>
+            <span class="footer-names">Ramon Jr, Mikael Lorran, Wilker, Juan, Davi, João Paulo</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
